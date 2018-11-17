@@ -1,0 +1,27 @@
+permalink: /:title/
+timezone: America/Vancouver
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-assets
+  - jekyll-autoprefixer
+  - jekyll-sitemap
+
+assets:
+  autoprefixer:
+    browsers:
+      - last 10 versions
+      - IE > 9
+
+title:
+url:
+description:
+image:
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: page
