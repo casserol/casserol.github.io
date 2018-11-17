@@ -18,10 +18,3 @@ title:
 url:
 description:
 image:
-
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: page
