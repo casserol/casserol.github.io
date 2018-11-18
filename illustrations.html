@@ -1,4 +1,12 @@
 ---
 layout: default
 ---
-Some Illustrations
+<div class="cards">
+  {%- for illustration in site.data.illustrations -%}
+    <div class="card">
+      <img src="/assets/images/illustrations/{{illustration.image}}"/>
+    </div>
+  {%- endfor -%}
+  <div class="fill"></div>
+  <div class="fill"></div>
+</div>
