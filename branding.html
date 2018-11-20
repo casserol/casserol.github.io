@@ -2,11 +2,7 @@
 layout: default
 ---
 <div class="cards">
-  {%- for branding in site.data.branding -%}
-    <div class="card">
-      <img src="/assets/images/branding/{{branding.image}}"/>
-    </div>
-  {%- endfor -%}
+  {%- include gallery.html cards=site.data.branding -%}
   <div class="fill"></div>
   <div class="fill"></div>
 </div>

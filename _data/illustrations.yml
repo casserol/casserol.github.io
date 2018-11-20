@@ -1,11 +1,10 @@
-
-- { image: "bigbird.jpg" }
-- { image: "creeper-dino.jpg" }
-- { image: "Chinatocat.jpg" }
-- { image: "thing.jpg" }
-- { image: "Frog.jpg" }
-- { image: "chibidragon.jpg" }
-- { image: "deer-mod.jpg" }
-- { image: "dragon.jpg" }
-- { image: "omcrab.jpg" }
-- { image: "many-faces.jpg" }
+- { image: "/illustrations/bigbird.jpg" }
+- { image: "/illustrations/creeper-dino.jpg" }
+- { image: "/illustrations/Chinatocat.jpg" }
+- { image: "/illustrations/thing.jpg" }
+- { image: "/illustrations/Frog.jpg" }
+- { image: "/illustrations/chibidragon.jpg" }
+- { image: "/illustrations/deer-mod.jpg" }
+- { image: "/illustrations/dragon.jpg" }
+- { image: "/illustrations/omcrab.jpg" }
+- { image: "/illustrations/many-faces.jpg" }

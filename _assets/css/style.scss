@@ -1,5 +1,48 @@
-@import "fonts";
-@import "global";
+$primary-color: #4d4d4d;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: $primary-color;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  letter-spacing: 0.175rem;
+  line-height: 1.5;
+  margin: 0;
+
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+a {
+  color: #295ad6;
+  font-size: .875rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 120ms ease;
+
+  &:hover {
+    color: #2148ab;
+  }
+}
+
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
 
 .header {
   padding: 2.5rem 2.5rem 1.5rem;
@@ -7,6 +50,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  flex-shrink: 0;
 
   .brand,
   .links {
@@ -14,10 +58,11 @@
   }
 
   .brand {
+    color: $primary-color;
     font-size: 1.625rem;
     font-weight: bold;
     overflow: hidden;
-    text-overflow: truncate;
+    text-overflow: ellipsis;
     text-transform: uppercase;
     white-space: nowrap;
   }
@@ -77,4 +122,59 @@
 
 .card {
   cursor: pointer;
+}
+
+.modal {
+  cursor: default;
+  z-index: 99999;
+  width: 100vw;
+
+  .overlay {
+    background-color: rgba(0, 0, 0, .07);
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+  .modal-content {
+    background-color: white;
+    position: fixed;
+    height: 100vh;
+    max-width: 100%;
+    right: 0;
+    top: 0;
+    width: 800px;
+  }
+
+  .modal-header {
+    padding: 1.5rem 1.5rem 0;
+
+    .title {
+      color: darkolivegreen;
+      font-size: 20pt;
+      margin-top: 2rem;
+    }
+
+    .close {}
+  }
+
+  .modal-body {
+    align-items: flex-start;
+    display: flex;
+    padding: 1.5rem;
+
+    .description {
+      flex-grow: 1;
+      margin-right: 2rem;
+      margin-top: 3rem;
+    }
+
+    .details {
+      flex-basis: 250px;
+      flex-shrink: 0;
+      margin-top: 3rem;
+    }
+  }
 }
