@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <title>{{site.title}}</title>
   <meta name="description" content="{{site.description | truncate: 150}}">
-  <link rel="canonical" href="{{site.url}}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{site.url}}">
   <meta property="og:title" content="{{site.title | truncate: 65}}">
@@ -19,7 +18,8 @@
   <meta name="twitter:title" content="{{site.title | truncate: 65}}">
   <meta name="twitter:description" content="{{site.description | truncate: 200}}">
   <meta name="twitter:image" content="{{site.image}}">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+  <link rel="canonical" href="{{site.url}}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700">
   {% css style %}
 </head>
 <body>
@@ -34,5 +34,6 @@
     </div>
     {{content}}
   </div>
+  <script src="/assets/js/app.js"></script>
 </body>
 </html>
