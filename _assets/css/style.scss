@@ -126,13 +126,8 @@ img {
 
 .modal {
   cursor: default;
-  display: none;
   z-index: 99999;
   width: 100vw;
-
-  &.open {
-    display: block;
-  }
 
   .overlay {
     background-color: rgba(0, 0, 0, .37);

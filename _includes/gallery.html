@@ -1,7 +1,13 @@
 {%- for card in include.cards -%}
-  <div class="card">
+  <div
+    class="card"
+    data-title=""
+    data-description=""
+    data-date=""
+    data-client=""
+    data-role=""
+    data-url=""
+  >
     <img src="/assets/images/{{card.image}}"/>
-
-    {%- include modal.html card=card -%}
   </div>
 {%- endfor -%}
