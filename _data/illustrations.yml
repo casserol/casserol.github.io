@@ -31,7 +31,7 @@
 }
 
 - {
-  image: "illustrations/Chinatocat.jpg",
+  image: "illustrations/chinatocat.jpg",
   title: "Chinatocat",
   date: "April 2000",
   client: "Me",
@@ -63,7 +63,7 @@
 }
 
 - {
-  image: "illustrations/Frog.jpg",
+  image: "illustrations/frog.jpg",
   title: "Frogo",
   date: "April 2000",
   client: "Me",

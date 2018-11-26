@@ -1,5 +1,5 @@
 - {
-  image: "branding/Illumine-logo.jpg",
+  image: "branding/illumine-logo.jpg",
   title: "Illumine",
   description: "
     Illumine is an artisan shop that specializes in hand embroidery, childrens soft toys and PDF embroidery patterns. They
@@ -7,7 +7,7 @@
   ",
     images: [
     "branding/illumine-square-logo.jpg",
-    "branding/Postcard-side-by-side.jpg",
+    "branding/postcard-side-by-side.jpg",
     "branding/ill-littleone.jpg",
     "branding/ill-hedgi.jpg",
     "branding/ill-lama.jpg",
@@ -29,7 +29,7 @@
      their freelance bookkeeping business with geometric shapes.
   ",
     images: [
-    "branding/MAB.jpg",
+    "branding/mab.jpg",
     "branding/mab-cards.jpg",
     "branding/mab-colour-options.jpg",
   ]
@@ -54,14 +54,14 @@
 }
 
 - {
-  image: "branding/Petite-Blooms.jpg",
+  image: "branding/petite-blooms.jpg",
   title: "Petite Blooms",
   description: "
     Petite Blooms is a small artisan flower shop with a focus on providing mini
     boquets. They asked me to create a classic and modern logo for there brand.
   ",
   images: [
-    "branding/Petite-blooms-black.jpg",
+    "branding/petite-blooms-black.jpg",
   ]
 }
 
