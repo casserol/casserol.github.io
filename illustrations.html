@@ -4,7 +4,7 @@ layout: default
 <div class="cards">
   {%- for card in site.data.illustrations -%}
     <div class="card">
-      <img src="/assets/images/{{card.image}}"/>
+      <img src="{{site.baseurl}}/assets/images/{{card.image}}"/>
     </div>
   {%- endfor -%}
   <div class="fill"></div>

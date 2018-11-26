@@ -1,6 +1,6 @@
 (function() {
-  function createImageHTML(image) {
-    return `<img src="/assets/images/${image}"/>`;
+  function createImageHTML(path, image) {
+    return `<img src="${path}/${image}"/>`;
   }
 
   function createModalHTML(data) {
@@ -9,15 +9,16 @@
       description,
       image,
       images: imageUrls,
+      path,
     } = data;
 
     const images = imageUrls
       .split(',')
       .filter((image) => image !== '')
-      .map(createImageHTML);
+      .map((image) => createImageHTML(path, image));
 
     if (image) {
-      images.unshift(createImageHTML(image));
+      images.unshift(createImageHTML(path, image));
     }
 
     return `

@@ -2,3 +2,4 @@ permalink: /:title/
 timezone: America/Vancouver
 sass:
   style: compressed
+baseurl: /portfolio

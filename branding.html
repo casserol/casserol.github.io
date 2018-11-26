@@ -9,8 +9,9 @@ layout: default
       data-image="{{card.image}}"
       data-description="{{card.description}}"
       data-images="{{card.images | join: ','}}"
+      data-path="{{site.baseurl}}/assets/images"
     >
-      <img src="/assets/images/{{card.image}}"/>
+      <img src="{{site.baseurl}}/assets/images/{{card.image}}"/>
     </div>
   {%- endfor -%}
   <div class="fill"></div>
