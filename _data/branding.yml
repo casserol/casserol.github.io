@@ -1,2 +1,79 @@
-- { image: "/branding/Petite-Blooms.jpg" }
-- { image: "/branding/illumine-square-logo.jpg"}
+- {
+  image: "branding/Illumine-logo.jpg",
+  title: "Illumine",
+  description: "
+    Illumine is an artisan shop that specializes in hand embroidery, childrens soft toys and PDF embroidery patterns. They
+    wanted a versatile logo that could be used in any form as well as a series of illustrations for their soft toys.
+  ",
+    images: [
+    "branding/illumine-square-logo.jpg",
+    "branding/Postcard-side-by-side.jpg",
+    "branding/ill-littleone.jpg",
+    "branding/ill-hedgi.jpg",
+    "branding/ill-lama.jpg",
+    "branding/ill-lion.jpg",
+    "branding/ill-moonrise.jpg",
+    "branding/ill-sunrise.jpg",
+    "branding/ill-150.jpg",
+    "branding/ill-cat.jpg",
+    "branding/ill-ele.jpg",
+    "branding/ill-whale.jpg",
+  ]
+}
+
+- {
+  image: "branding/mab-logo.jpg",
+  title: "Mad About Bookkeeping",
+  description: "
+     Mad About Bookkeeping asked me to create a strong yet feminine logo for
+     their freelance bookkeeping business with geometric shapes.
+  ",
+    images: [
+    "branding/MAB.jpg",
+    "branding/mab-cards.jpg",
+    "branding/mab-colour-options.jpg",
+  ]
+}
+
+- {
+  image: "branding/lag-logo.jpg",
+  title: "Lagom Concepts",
+  description: "
+    Lagom Concepts asked me to create a series of illustrations centering around a main bear and travel.
+  ",
+  images: [
+    "branding/lag-mm-fb.jpg",
+    "branding/lag-mm-lc.jpg",
+    "branding/lag-movembear.jpg",
+    "branding/lag-ballon.jpg",
+    "branding/lag-camera.jpg",
+    "branding/lag-explore.jpg",
+    "branding/lag-rain-bear.jpg",
+    "branding/lag-wander.jpg",
+  ]
+}
+
+- {
+  image: "branding/Petite-Blooms.jpg",
+  title: "Petite Blooms",
+  description: "
+    Petite Blooms is a small artisan flower shop with a focus on providing mini
+    boquets. They asked me to create a classic and modern logo for there brand.
+  ",
+  images: [
+    "branding/Petite-blooms-black.jpg",
+  ]
+}
+
+- {
+  image: "branding/elemental-logo.jpg",
+  title: "Elemental Trends",
+  description: "
+    Elemental Trends brings artisan shops together with pop ups and markets.
+    I was asked to create a logo that was simple and strong as well as a memorable slogan.
+  ",
+    images: [
+    "branding/elemental-alt-logo.jpg",
+    "branding/elemental-slogan.jpg",
+  ]
+}

@@ -2,7 +2,17 @@
 layout: default
 ---
 <div class="cards">
-  {%- include gallery.html cards=site.data.branding -%}
+  {%- for card in site.data.branding -%}
+    <div
+      class="card has-modal"
+      data-title="{{card.title}}"
+      data-image="{{card.image}}"
+      data-description="{{card.description}}"
+      data-images="{{card.images | join: ','}}"
+    >
+      <img src="/assets/images/{{card.image}}"/>
+    </div>
+  {%- endfor -%}
   <div class="fill"></div>
   <div class="fill"></div>
 </div>

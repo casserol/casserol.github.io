@@ -1,10 +1,137 @@
-- { image: "/illustrations/bigbird.jpg" }
-- { image: "/illustrations/creeper-dino.jpg" }
-- { image: "/illustrations/Chinatocat.jpg" }
-- { image: "/illustrations/thing.jpg" }
-- { image: "/illustrations/Frog.jpg" }
-- { image: "/illustrations/chibidragon.jpg" }
-- { image: "/illustrations/deer-mod.jpg" }
-- { image: "/illustrations/dragon.jpg" }
-- { image: "/illustrations/omcrab.jpg" }
-- { image: "/illustrations/many-faces.jpg" }
+- {
+  image: "illustrations/bigbird.jpg",
+  title: "Big Bird",
+  date: "April 2000",
+  client: "Me",
+  role: "Design",
+  url: "<none>",
+  description: "
+    My sister died in the spaghetti. My name is Slip- Slippery Stair. I'll take ya down there for 25 shmeckels!
+
+    I'm a bit of a stickler Meeseeks, what about your short game?
+
+    God? God's turning people into insect monsters Beth. I'm the one beating them to death. Thank me.
+  "
+}
+
+- {
+  image: "illustrations/creeper-dino.jpg",
+  title: "Creeper Dino",
+  date: "April 2000",
+  client: "Me",
+  role: "Design",
+  url: "<none>",
+  description: "
+    My sister died in the spaghetti. My name is Slip- Slippery Stair. I'll take ya down there for 25 shmeckels!
+
+    I'm a bit of a stickler Meeseeks, what about your short game?
+
+    God? God's turning people into insect monsters Beth. I'm the one beating them to death. Thank me.
+  "
+}
+
+- {
+  image: "illustrations/Chinatocat.jpg",
+  title: "Chinatocat",
+  date: "April 2000",
+  client: "Me",
+  role: "Design",
+  url: "<none>",
+  description: "
+    My sister died in the spaghetti. My name is Slip- Slippery Stair. I'll take ya down there for 25 shmeckels!
+
+    I'm a bit of a stickler Meeseeks, what about your short game?
+
+    God? God's turning people into insect monsters Beth. I'm the one beating them to death. Thank me.
+  "
+}
+
+- {
+  image: "illustrations/thing.jpg",
+  title: "Thing",
+  date: "April 2000",
+  client: "Me",
+  role: "Design",
+  url: "<none>",
+  description: "
+    My sister died in the spaghetti. My name is Slip- Slippery Stair. I'll take ya down there for 25 shmeckels!
+
+    I'm a bit of a stickler Meeseeks, what about your short game?
+
+    God? God's turning people into insect monsters Beth. I'm the one beating them to death. Thank me.
+  "
+}
+
+- {
+  image: "illustrations/Frog.jpg",
+  title: "Frogo",
+  date: "April 2000",
+  client: "Me",
+  role: "Design",
+  url: "<none>",
+  description: "
+    My sister died in the spaghetti. My name is Slip- Slippery Stair. I'll take ya down there for 25 shmeckels!
+
+    I'm a bit of a stickler Meeseeks, what about your short game?
+
+    God? God's turning people into insect monsters Beth. I'm the one beating them to death. Thank me.
+  "
+}
+
+- {
+  image: "illustrations/chibidragon.jpg",
+  title: "Chibi Dragon",
+  date: "April 2000",
+  client: "Me",
+  role: "Design",
+  url: "<none>",
+  description: "
+    My sister died in the spaghetti. My name is Slip- Slippery Stair. I'll take ya down there for 25 shmeckels!
+
+    I'm a bit of a stickler Meeseeks, what about your short game?
+
+    God? God's turning people into insect monsters Beth. I'm the one beating them to death. Thank me.
+  "
+}
+
+- {
+  image: "illustrations/deer-mod.jpg",
+  title: "Deer",
+  date: "April 2000",
+  client: "Me",
+  role: "Design",
+  url: "<none>",
+  description: "
+    My sister died in the spaghetti. My name is Slip- Slippery Stair. I'll take ya down there for 25 shmeckels!
+
+    I'm a bit of a stickler Meeseeks, what about your short game?
+
+    God? God's turning people into insect monsters Beth. I'm the one beating them to death. Thank me.
+  "
+}
+
+- {
+  image: "illustrations/dragon.jpg",
+  title: "Dragon",
+  date: "April 2000",
+  client: "Me",
+  role: "Design",
+  url: "<none>",
+  description: "
+    My sister died in the spaghetti. My name is Slip- Slippery Stair. I'll take ya down there for 25 shmeckels!
+
+    I'm a bit of a stickler Meeseeks, what about your short game?
+
+    God? God's turning people into insect monsters Beth. I'm the one beating them to death. Thank me.
+  "
+}
+
+- {
+  image: "illustrations/omcrab.jpg",
+  title: "OmCrab",
+ }
+
+- {
+  image: "illustrations/many-faces.jpg",
+  title: "Many Faces",
+}

@@ -1,95 +1,115 @@
 (function() {
-  function make(className, children = []) {
-    const node = document.createElement('div');
+  function createImageHTML(image) {
+    return `<img src="/assets/images/${image}"/>`;
+  }
 
-    node.className = className;
+  function createModalHTML(data) {
+    const {
+      title,
+      description,
+      image,
+      images: imageUrls,
+    } = data;
 
-    for (let child of children) {
-      node.appendChild(child);
+    const images = imageUrls
+      .split(',')
+      .filter((image) => image !== '')
+      .map(createImageHTML);
+
+    if (image) {
+      images.unshift(createImageHTML(image));
     }
 
-    return node;
+    return `
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="title">${title}</div>
+          <div class="close"></div>
+        </div>
+        <div class="modal-body">
+          <div class="description">${description}</div>
+          <div class="images">${images.join('')}</div>
+        </div>
+      </div>
+    `;
   }
 
-  function modal({
-    title = '',
-    description = '',
-    date = '',
-    client = '',
-    role = '',
-    url = '',
-  } = {}) {
-    return make('modal', [
-      make('overlay'),
-      make('modal-content', [
-        make('modal-header', [
-          make('title', [document.createTextNode(title)]),
-          make('close'),
-        ]),
-        make('modal-body', [
-          make('description', [document.createTextNode(description)]),
-          make('details', [
-            make('', [document.createTextNode(`Date: ${date}`)]),
-            make('', [document.createTextNode(`Client: ${client}`)]),
-            make('', [document.createTextNode(`Role: ${role}`)]),
-            make('', [document.createTextNode(`URL: ${url}`)]),
-          ]),
-        ]),
-      ]),
-    ]);
+  function createModalElement(data) {
+    const element = document.createElement('div');
+    const overlay = document.createElement('div');
+
+    element.className = 'modal';
+    overlay.className = 'overlay';
+
+    element.innerHTML = createModalHTML(data);
+
+    element.appendChild(overlay);
+
+    return element;
   }
 
-  const state = {
-    body: document.body,
-    isOpen: false,
-    modal: null,
-  };
+  let currentModal = null;
 
-  function stop(event) {
+  function stopEvent(event) {
     event.preventDefault();
     event.stopPropagation();
   }
 
-  function clear() {
-    if (!state.modal) {
+  // Function to clear the current modal
+  function clearModal() {
+    if (!currentModal) {
       return;
     }
 
     document.body.classList.remove('modal-open');
 
-    state.modal.parentNode.removeChild(state.modal);
-    state.modal = null;
+    currentModal.parentNode.removeChild(currentModal);
+    currentModal = null;
   }
 
-  function toggle(data) {
-    clear();
+  function showModal(data = {}) {
+    clearModal();
 
-    state.modal = modal(data);
+    currentModal = createModalElement(data);
 
-    document.body.appendChild(state.modal);
+    document.body.appendChild(currentModal);
     document.body.classList.add('modal-open');
   }
 
-  function click(event) {
-    stop(event);
-
+  function onClick(event) {
+    // Check if the element that we clicked on is the overlay element
     const isOverlay = event.target.classList.contains('overlay');
+    const isClose = event.target.classList.contains('close');
 
-    if (isOverlay) {
-      clear();
+    // If it was the overlay...
+    if (isOverlay || isClose) {
+      // Stop the event
+      stopEvent(event);
+      // Close the current modal
+      clearModal();
+      // exit the function
       return;
     }
 
-    const card = event.target.closest('.card');
+    // Retrieve the first parent HTML card, relative to the element that was clicked on
+    const target = event.target.closest('.has-modal');
 
-    if (card && card.dataset) {
-      toggle(card.dataset);
+    // Check if the element clicked on has a card
+    if (target) {
+      // Stop the event
+      stopEvent(event);
+      // call showModal passing card.dataset (data-* html attrs) as the only argument
+      // star prefix is anything that has data- infront
+      // data-* refers to any HTML attribute starting with data-. The * is referred to as a wildcard
+      showModal(target.dataset);
     }
   }
 
-  function init() {
-    document.addEventListener('click', click);
+  function onLoad() {
+    // call onClick function when click event happens
+    document.addEventListener('click', onClick);
   }
 
-  document.addEventListener('DOMContentLoaded', init);
+  // call onLoad function when DOMContentLoaded event happens
+  document.addEventListener('DOMContentLoaded', onLoad);
 })();
